@@ -12,7 +12,7 @@
         "server": "fastest-config-by-ayhan.umc-mansur13.workers.dev",
         "path": "/dns-query",
         "domain_resolver": "dns_direct",
-        "detour": "🛰️ Service"
+        "detour": "🍁🕹️📟 𝐀𝐲𝐡𝐚𝐧𝐗-𝐅𝐫𝐞𝐞𝐝𝐨𝐦.👾🛡 ⚔️ 🔄"
       },
       {
         "tag": "dns_game",
@@ -93,7 +93,7 @@
     "server": "17.253.18.131",
     "server_port": 123,
     "interval": "30m",
-    "detour": "🛰️ Service"
+    "detour": "🍁🕹️📟 𝐀𝐲𝐡𝐚𝐧𝐗-𝐅𝐫𝐞𝐞𝐝𝐨𝐦.👾🛡 ⚔️ 🔄"
   },
   "http_clients": [
     {
@@ -104,17 +104,7 @@
       "tls": {
         "insecure": true
       },
-      "detour": "🛰️ Service"
-    }
-  ],
-  "endpoints": [
-    {
-      "type": "tailscale",
-      "tag": "🇮🇷 𝐈𝐫𝐚𝐧",
-      "auth_key": "tskey-auth-ks95utBQJE11CNTRL-8NcRVwkLT4Q1qCsKve6E4Qkz4nRRjnM1",
-      "hostname": "ios-client",
-      "exit_node": "100.117.153.68",
-      "ephemeral": false
+      "detour": "🍁🕹️📟 𝐀𝐲𝐡𝐚𝐧𝐗-𝐅𝐫𝐞𝐞𝐝𝐨𝐦.👾🛡 ⚔️ 🔄"
     }
   ],
   "inbounds": [
@@ -134,42 +124,47 @@
   "outbounds": [
     {
       "type": "selector",
-      "tag": "🛰️ Service",
+      "tag": "🍁🕹️📟 𝐀𝐲𝐡𝐚𝐧𝐗-𝐅𝐫𝐞𝐞𝐝𝐨𝐦.👾🛡 ⚔️ 🔄",
       "default": "🇦🇪 𝐃𝐮𝐛𝐚𝐢",
       "outbounds": [
         "🔄 Update Daily",
-        "🇮🇷 𝐈𝐫𝐚𝐧",
+        "🍁🕹️📟 𝐀𝐲𝐡𝐚𝐧𝐗-𝐅𝐫𝐞𝐞𝐝𝐨𝐦.👾🛡 ⚔🔄",
+        "🕹️ 📟🫆𝐀𝐲𝐡𝐚𝐧𝐗-𝐅𝐫𝐞𝐞𝐝𝐨𝐦.🌌🍀 🔄",
+        "𝐉𝐨𝐢𝐧 .🍁🪾 <..@𝐚𝐲𝐡𝐚𝐧𝐝𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫..>🔄",
         "🇦🇪 𝐃𝐮𝐛𝐚𝐢",
         "🇺🇿 𝐔𝐳𝐛𝐞𝐤𝐢𝐬𝐭𝐚𝐧",
         "🇮🇱 𝐈𝐬𝐫𝐚𝐞𝐥",
         "🇹🇷 𝐓𝐮𝐫𝐤𝐞𝐲",
-        " 🇰🇿 𝐊𝐚𝐳𝐚𝐤𝐡𝐬𝐭𝐚𝐧",
+        "🇰🇿 𝐊𝐚𝐳𝐚𝐤𝐡𝐬𝐭𝐚𝐧",
         "🇷🇺 𝐑𝐮𝐬𝐬𝐢𝐚",
-        "🇺🇦 𝐔𝐤𝐫𝐚𝐢𝐧𝐞",
-        "🇱🇻 𝐋𝐚𝐭𝐯𝐢𝐚",
         "🇮🇹 𝐈𝐭𝐚𝐥𝐲",
-        "🇫🇮 𝐅𝐢𝐧𝐥𝐚𝐧𝐝",
         "🇨🇭 𝐒𝐰𝐢𝐭𝐳𝐞𝐫𝐥𝐚𝐧𝐝",
+        "🇱🇻 𝐋𝐚𝐭𝐯𝐢𝐚",
+        "🇫🇮 𝐅𝐢𝐧𝐥𝐚𝐧𝐝",
+        "🇩🇪 𝐆𝐞𝐫𝐦𝐚𝐧𝐲",
         "🇸🇪 𝐒𝐰𝐞𝐝𝐞𝐧",
-        "🇳🇱 𝐍𝐞𝐭𝐡𝐞𝐫𝐥𝐚𝐧𝐝𝐬",
         "🇫🇷 𝐅𝐫𝐚𝐧𝐜𝐞",
+        "🇳🇱 𝐍𝐞𝐭𝐡𝐞𝐫𝐥𝐚𝐧𝐝𝐬",
         "🇬🇧 𝐔𝐧𝐢𝐭𝐞𝐝 𝐊𝐢𝐧𝐠𝐝𝐨𝐦",
-        "🇪🇸 𝐒𝐩𝐚𝐢𝐧",
         "🇸🇬 𝐒𝐢𝐧𝐠𝐚𝐩𝐨𝐫𝐞",
-        "🇯🇵 𝐉𝐚𝐩𝐚𝐧",
+        "🇪🇸 𝐒𝐩𝐚𝐢𝐧",
         "🇨🇦 𝐂𝐚𝐧𝐚𝐝𝐚",
+        "🇯🇵 𝐉𝐚𝐩𝐚𝐧",
         "🇺🇸 𝐔𝐧𝐢𝐭𝐞𝐝 𝐒𝐭𝐚𝐭𝐞𝐬",
         "🇧🇷 𝐁𝐫𝐚𝐳𝐢𝐥",
         "🇲🇽 𝐌𝐞𝐱𝐢𝐜𝐨",
-        "🇷🇴 𝐑𝐨𝐦𝐚𝐧𝐢𝐚",
+        "🇮🇩 𝐈𝐧𝐝𝐨𝐧𝐞𝐬𝐢𝐚",
+        "🇷🇴 𝐑𝐨𝐦𝐚𝐢𝐚",
         "🇪🇪 𝐄𝐬𝐭𝐨𝐧𝐢𝐚",
-        "🇨🇿 𝐂𝐳𝐞𝐜𝐡",
+        "🇦🇹 𝐀𝐮𝐬𝐭𝐫𝐢𝐚",
         "🇳🇴 𝐍𝐨𝐫𝐰𝐚𝐲",
+        "🇨🇿 𝐂𝐳𝐞𝐜𝐡",
         "🇹🇼 𝐓𝐚𝐢𝐰𝐚𝐧",
         "🇰🇭 𝐂𝐚𝐦𝐛𝐨𝐝𝐢𝐚",
-        "🇳🇿 𝐍𝐞𝐰 𝐙𝐞𝐚𝐥𝐚𝐧𝐝",
+        "🇳🇿 𝑵𝒆𝒘 𝒁𝒆𝒂𝒍𝒂𝒏𝒅",
         "🇰🇷 𝐒𝐨𝐮𝐭𝐡 𝐊𝐨𝐫𝐞𝐚",
-        "🇮🇳 𝐈𝐧𝐝𝐢𝐚",
+        "🇭🇺 𝐇𝐮𝐧𝐠𝐚𝐫𝐲",
+        "🇮🇳 𝐢𝐧𝐝𝐢𝐚",
         "🇭🇰 𝐇𝐨𝐧𝐠 𝐊𝐨𝐧𝐠",
         "🇦🇷 𝐀𝐫𝐠𝐞𝐧𝐭𝐢𝐧𝐚",
         "🇧🇬 𝐁𝐮𝐥𝐠𝐚𝐫𝐢𝐚",
@@ -177,18 +172,16 @@
         "🇧🇪 𝐁𝐞𝐥𝐠𝐢𝐮𝐦",
         "🇿🇦 𝐒𝐨𝐮𝐭𝐡 𝐀𝐟𝐫𝐢𝐜𝐚",
         "🇮🇸 𝐈𝐜𝐞𝐥𝐚𝐧𝐝",
-        "🇲🇩 𝐌𝐨𝐥𝐝𝐨𝐯𝐚",
+        "🇮🇪 𝐈𝐫𝐞𝐥𝐚𝐧𝐝",
+        "🇻🇳 𝐕𝐢𝐞𝐭𝐧𝐚𝐦",
         "🇹🇭 𝐓𝐡𝐚𝐢𝐥𝐚𝐧𝐝",
         "🇩🇰 𝐃𝐞𝐧𝐦𝐚𝐫𝐤",
-        "🇦🇲 𝐀𝐫𝐦𝐞𝐧𝐢𝐚",
+        "🇦🇲 𝐀𝐫𝐦𝐞𝐢𝐚",
         "🇲🇾 𝐌𝐚𝐥𝐚𝐲𝐬𝐢𝐚",
         "🇵🇱 𝐏𝐨𝐥𝐚𝐧𝐝",
         "🇱🇹 𝐋𝐢𝐭𝐡𝐮𝐚𝐧𝐢𝐚",
-        "🇪🇨 𝐄𝐜𝐮𝐚𝐝𝐨𝐫",
-        "🇩🇪 𝐆𝐞𝐫𝐦𝐚𝐧𝐲",
-        "🇲🇰 𝐍𝐨𝐫𝐭𝐡 𝐌𝐚𝐜𝐞𝐝𝐨𝐧𝐢𝐚",
-        "🇭🇺 𝐇𝐮𝐧𝐠𝐚𝐫𝐲",
-        "🇧🇾 𝐁𝐞𝐥𝐚𝐫𝐮𝐬"
+        "🇧🇾 𝐁𝐞𝐥𝐚𝐫𝐮𝐬",
+        "🇪🇨 𝐄𝐜𝐮𝐚𝐝𝐨𝐫𝐦"
       ],
       "interrupt_exist_connections": true
     },
@@ -198,9 +191,8 @@
       "default": "🇷🇺 𝐑𝐮𝐬𝐬𝐢𝐚",
       "outbounds": [
         "🇷🇺 𝐑𝐮𝐬𝐬𝐢𝐚",
-        " 🇰🇿 𝐊𝐚𝐳𝐚𝐤𝐡𝐬𝐭𝐚𝐧",
-        "🇫🇷 𝐅𝐫𝐚𝐧𝐜𝐞",
-        "🇺🇦 𝐔𝐤𝐫𝐚𝐢𝐧𝐞"
+        "🇰🇿 𝐊𝐚𝐳𝐚𝐤𝐡𝐬𝐭𝐚𝐧",
+        "🇫🇷 𝐅𝐫𝐚𝐧𝐜𝐞"
       ],
       "interrupt_exist_connections": true
     },
@@ -209,7 +201,6 @@
       "tag": "👾 Game Booster",
       "default": "🇹🇷 𝐓𝐮𝐫𝐤𝐞𝐲",
       "outbounds": [
-        "🇮🇷 𝐈𝐫𝐚𝐧",
         "🇹🇷 𝐓𝐮𝐫𝐤𝐞𝐲",
         "🇦🇪 𝐃𝐮𝐛𝐚𝐢",
         "🇳🇱 𝐍𝐞𝐭𝐡𝐞𝐫𝐥𝐚𝐧𝐝𝐬",
@@ -226,33 +217,36 @@
         "🇺🇿 𝐔𝐳𝐛𝐞𝐤𝐢𝐬𝐭𝐚𝐧",
         "🇮🇱 𝐈𝐬𝐫𝐚𝐞𝐥",
         "🇹🇷 𝐓𝐮𝐫𝐤𝐞𝐲",
-        " 🇰🇿 𝐊𝐚𝐳𝐚𝐤𝐡𝐬𝐭𝐚𝐧",
+        "🇰🇿 𝐊𝐚𝐳𝐚𝐤𝐡𝐬𝐭𝐚𝐧",
         "🇷🇺 𝐑𝐮𝐬𝐬𝐢𝐚",
-        "🇺🇦 𝐔𝐤𝐫𝐚𝐢𝐧𝐞",
-        "🇱🇻 𝐋𝐚𝐭𝐯𝐢𝐚",
         "🇮🇹 𝐈𝐭𝐚𝐥𝐲",
-        "🇫🇮 𝐅𝐢𝐧𝐥𝐚𝐧𝐝",
         "🇨🇭 𝐒𝐰𝐢𝐭𝐳𝐞𝐫𝐥𝐚𝐧𝐝",
+        "🇱🇻 𝐋𝐚𝐭𝐯𝐢𝐚",
+        "🇫🇮 𝐅𝐢𝐧𝐥𝐚𝐧𝐝",
+        "🇩🇪 𝐆𝐞𝐫𝐦𝐚𝐧𝐲",
         "🇸🇪 𝐒𝐰𝐞𝐝𝐞𝐧",
-        "🇳🇱 𝐍𝐞𝐭𝐡𝐞𝐫𝐥𝐚𝐧𝐝𝐬",
         "🇫🇷 𝐅𝐫𝐚𝐧𝐜𝐞",
+        "🇳🇱 𝐍𝐞𝐭𝐡𝐞𝐫𝐥𝐚𝐧𝐝𝐬",
         "🇬🇧 𝐔𝐧𝐢𝐭𝐞𝐝 𝐊𝐢𝐧𝐠𝐝𝐨𝐦",
-        "🇪🇸 𝐒𝐩𝐚𝐢𝐧",
         "🇸🇬 𝐒𝐢𝐧𝐠𝐚𝐩𝐨𝐫𝐞",
-        "🇯🇵 𝐉𝐚𝐩𝐚𝐧",
+        "🇪🇸 𝐒𝐩𝐚𝐢𝐧",
         "🇨🇦 𝐂𝐚𝐧𝐚𝐝𝐚",
+        "🇯🇵 𝐉𝐚𝐩𝐚𝐧",
         "🇺🇸 𝐔𝐧𝐢𝐭𝐞𝐝 𝐒𝐭𝐚𝐭𝐞𝐬",
         "🇧🇷 𝐁𝐫𝐚𝐳𝐢𝐥",
         "🇲🇽 𝐌𝐞𝐱𝐢𝐜𝐨",
-        "🇷🇴 𝐑𝐨𝐦𝐚𝐧𝐢𝐚",
+        "🇮🇩 𝐈𝐧𝐝𝐨𝐧𝐞𝐬𝐢𝐚",
+        "🇷🇴 𝐑𝐨𝐦𝐚𝐢𝐚",
         "🇪🇪 𝐄𝐬𝐭𝐨𝐧𝐢𝐚",
-        "🇨🇿 𝐂𝐳𝐞𝐜𝐡",
+        "🇦🇹 𝐀𝐮𝐬𝐭𝐫𝐢𝐚",
         "🇳🇴 𝐍𝐨𝐫𝐰𝐚𝐲",
+        "🇨🇿 𝐂𝐳𝐞𝐜𝐡",
         "🇹🇼 𝐓𝐚𝐢𝐰𝐚𝐧",
         "🇰🇭 𝐂𝐚𝐦𝐛𝐨𝐝𝐢𝐚",
-        "🇳🇿 𝐍𝐞𝐰 𝐙𝐞𝐚𝐥𝐚𝐧𝐝",
+        "🇳🇿 𝑵𝒆𝒘 𝒁𝒆𝒂𝒍𝒂𝒏𝒅",
         "🇰🇷 𝐒𝐨𝐮𝐭𝐡 𝐊𝐨𝐫𝐞𝐚",
-        "🇮🇳 𝐈𝐧𝐝𝐢𝐚",
+        "🇭🇺 𝐇𝐮𝐧𝐠𝐚𝐫𝐲",
+        "🇮🇳 𝐢𝐧𝐝𝐢𝐚",
         "🇭🇰 𝐇𝐨𝐧𝐠 𝐊𝐨𝐧𝐠",
         "🇦🇷 𝐀𝐫𝐠𝐞𝐧𝐭𝐢𝐧𝐚",
         "🇧🇬 𝐁𝐮𝐥𝐠𝐚𝐫𝐢𝐚",
@@ -260,18 +254,16 @@
         "🇧🇪 𝐁𝐞𝐥𝐠𝐢𝐮𝐦",
         "🇿🇦 𝐒𝐨𝐮𝐭𝐡 𝐀𝐟𝐫𝐢𝐜𝐚",
         "🇮🇸 𝐈𝐜𝐞𝐥𝐚𝐧𝐝",
-        "🇲🇩 𝐌𝐨𝐥𝐝𝐨𝐯𝐚",
+        "🇮🇪 𝐈𝐫𝐞𝐥𝐚𝐧𝐝",
+        "🇻🇳 𝐕𝐢𝐞𝐭𝐧𝐚𝐦",
         "🇹🇭 𝐓𝐡𝐚𝐢𝐥𝐚𝐧𝐝",
         "🇩🇰 𝐃𝐞𝐧𝐦𝐚𝐫𝐤",
-        "🇦🇲 𝐀𝐫𝐦𝐞𝐧𝐢𝐚",
+        "🇦🇲 𝐀𝐫𝐦𝐞𝐢𝐚",
         "🇲🇾 𝐌𝐚𝐥𝐚𝐲𝐬𝐢𝐚",
         "🇵🇱 𝐏𝐨𝐥𝐚𝐧𝐝",
         "🇱🇹 𝐋𝐢𝐭𝐡𝐮𝐚𝐧𝐢𝐚",
-        "🇪🇨 𝐄𝐜𝐮𝐚𝐝𝐨𝐫",
-        "🇩🇪 𝐆𝐞𝐫𝐦𝐚𝐧𝐲",
-        "🇲🇰 𝐍𝐨𝐫𝐭𝐡 𝐌𝐚𝐜𝐞𝐝𝐨𝐧𝐢𝐚",
-        "🇭🇺 𝐇𝐮𝐧𝐠𝐚𝐫𝐲",
-        "🇧🇾 𝐁𝐞𝐥𝐚𝐫𝐮𝐬"
+        "🇧🇾 𝐁𝐞𝐥𝐚𝐫𝐮𝐬",
+        "🇪🇨 𝐄𝐜𝐮𝐚𝐝𝐨𝐫𝐦"
       ],
       "interval": "1440m0s",
       "tolerance": 1,
@@ -283,1010 +275,1352 @@
       "tag": "direct"
     },
     {
-      "type": "vless",
-      "tag": "🇦🇪 𝐃𝐮𝐛𝐚𝐢",
-      "server": "45.131.4.44",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
-      "transport": {
-        "type": "ws",
-        "path": "/gmaetunnel/proxyip=176.97.66.175?ed=2560",
-        "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇿 𝐔𝐳𝐛𝐞𝐤𝐢𝐬𝐭𝐚𝐧",
-      "server": "5.10.244.0",
-      "server_port": 2095,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "type": "trojan",
+      "tag": "🍁🕹️📟 𝐀𝐲𝐡𝐚𝐧𝐗-𝐅𝐫𝐞𝐞𝐝𝐨𝐦.👾🛡 ⚔🔄",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "9BK_OfDsXhbPKs7zX",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
+        "enabled": true,
+        "server_name": "tsit7pyhmabrlriqecwb4miphh125sn.ayhan919292.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "randomized"
-        }
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/gmaetunnel/proxyip=157.22.128.7?ed=2560",
+        "path": "/tr/ScfQ8Q2ZJR89fiiL7xVg9aDFxY?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "tsit7pyhmabrlriqecwb4miphh125sn.ayhan919292.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇱 𝐈𝐬𝐫𝐚𝐞𝐥",
-      "server": "5.10.244.0",
-      "server_port": 80,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "type": "trojan",
+      "tag": "🕹️ 📟🫆𝐀𝐲𝐡𝐚𝐧𝐗-𝐅𝐫𝐞𝐞𝐝𝐨𝐦.🌌🍀 🔄",
+      "server": "104.17.95.171",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/gmaetunnel/proxyip=45.150.108.59?ed=2560",
-        "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 𝐓𝐮𝐫𝐤𝐞𝐲",
-      "server": "5.10.244.0",
-      "server_port": 2052,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        }
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/gmaetunnel/proxyip=212.192.6.66?ed=2560",
+        "path": "/gmaetunnel/proxyip=37.205.15.169?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": " 🇰🇿 𝐊𝐚𝐳𝐚𝐤𝐡𝐬𝐭𝐚𝐧",
-      "server": "45.131.4.34",
-      "server_port": 2082,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "type": "trojan",
+      "tag": "𝐉𝐨𝐢𝐧 .🍁🪾 <..@𝐚𝐲𝐡𝐚𝐧𝐝𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫..>🔄",
+      "server": "104.17.95.157",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "randomized"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/gmaetunnel/proxyip=109.248.170.245?ed=2560",
-        "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 𝐑𝐮𝐬𝐬𝐢𝐚",
-      "server": "admin.arexhub.ir",
-      "server_port": 2082,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev"
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=95.188.72.67?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇺🇦 𝐔𝐤𝐫𝐚𝐢𝐧𝐞",
-      "server": "5.10.244.0",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "type": "trojan",
+      "tag": "🇦🇪 𝐃𝐮𝐛𝐚𝐢",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev"
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/gmaetunnel/proxyip=91.238.105.102:443?ed=2560",
+        "path": "/out.php/m/gmaetunnel/proxyip=176.97.66.175?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇱🇻 𝐋𝐚𝐭𝐯𝐢𝐚",
-      "server": "5.10.244.0",
-      "server_port": 2095,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "type": "trojan",
+      "tag": "🇺🇿 𝐔𝐳𝐛𝐞𝐤𝐢𝐬𝐭𝐚𝐧",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev"
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/gmaetunnel/proxyip=212.6.44.68:443?ed=2560",
+        "path": "/gmaetunnel/proxyip=157.22.128.7?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇭 𝐒𝐰𝐢𝐭𝐳𝐞𝐫𝐥𝐚𝐧𝐝",
-      "server": "5.10.244.0",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "type": "trojan",
+      "tag": "🇮🇱 𝐈𝐬𝐫𝐚𝐞𝐥",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev"
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/gmaetunnel/proxyip=79.132.141.152?ed=2560",
+        "path": "/gmaetunnel/proxyip=45.150.108.59?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
+      "tag": "🇹🇷 𝐓𝐮𝐫𝐤𝐞𝐲",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
+      "tls": {
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/gmaetunnel/proxyip=185.255.93.189?ed=2560",
+        "headers": {
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇿 𝐊𝐚𝐳𝐚𝐤𝐡𝐬𝐭𝐚𝐧",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
+      "tls": {
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/gmaetunnel/proxyip=109.248.170.245?ed=2560",
+        "headers": {
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇷🇺 𝐑𝐮𝐬𝐬𝐢𝐚",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
+      "tls": {
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/gmaetunnel/proxyip=95.188.72.67?ed=2560",
+        "headers": {
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "trojan",
       "tag": "🇮🇹 𝐈𝐭𝐚𝐥𝐲",
-      "server": "5.10.244.0",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev"
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=83.229.6.134:443?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 𝐅𝐢𝐧𝐥𝐚𝐧𝐝",
-      "server": "5.10.244.0",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "type": "trojan",
+      "tag": "🇨🇭 𝐒𝐰𝐢𝐭𝐳𝐞𝐫𝐥𝐚𝐧𝐝",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev"
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/gmaetunnel/proxyip=79.132.141.152?ed=2560",
+        "headers": {
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇱🇻 𝐋𝐚𝐭𝐯𝐢𝐚",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
+      "tls": {
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/gmaetunnel/proxyip=212.6.44.68:443?ed=2560",
+        "headers": {
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇮 𝐅𝐢𝐧𝐥𝐚𝐧𝐝",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
+      "tls": {
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=138.124.7.136?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇩🇪 𝐆𝐞𝐫𝐦𝐚𝐧𝐲",
-      "server": "5.10.244.0",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "randomized"
-        }
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=209.38.246.159?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇸🇪 𝐒𝐰𝐞𝐝𝐞𝐧",
-      "server": "5.10.244.0",
-      "server_port": 2052,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev"
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=95.141.241.216?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇳🇱 𝐍𝐞𝐭𝐡𝐞𝐫𝐥𝐚𝐧𝐝𝐬",
-      "server": "5.10.244.0",
-      "server_port": 2095,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/gmaetunnel/proxyip=209.38.99.215?ed=2560",
-        "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇫🇷 𝐅𝐫𝐚𝐧𝐜𝐞",
-      "server": "admin.arexhub.ir",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev"
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=134.209.19.200?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 𝐔𝐧𝐢𝐭𝐞𝐝 𝐊𝐢𝐧𝐠𝐝𝐨𝐦",
-      "server": "5.10.244.0",
-      "server_port": 2052,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "type": "trojan",
+      "tag": "🇳🇱 𝐍𝐞𝐭𝐡𝐞𝐫𝐥𝐚𝐧𝐝𝐬",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev"
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/gmaetunnel/proxyip=209.38.99.215?ed=2560",
+        "headers": {
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇬🇧 𝐔𝐧𝐢𝐭𝐞𝐝 𝐊𝐢𝐧𝐠𝐝𝐨𝐦",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
+      "tls": {
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=67.207.80.155?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇸🇬 𝐒𝐢𝐧𝐠𝐚𝐩𝐨𝐫𝐞",
-      "server": "5.10.244.0",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev"
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=188.166.251.234?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇪🇸 𝐒𝐩𝐚𝐢𝐧",
-      "server": "5.10.244.0",
-      "server_port": 2095,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev"
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=194.154.28.227?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇨🇦 𝐂𝐚𝐧𝐚𝐝𝐚",
-      "server": "admin.arexhub.ir",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev"
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=192.99.169.176?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇯🇵 𝐉𝐚𝐩𝐚𝐧",
-      "server": "5.10.244.0",
-      "server_port": 80,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev"
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=43.170.8.95?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
       "type": "trojan",
       "tag": "🇺🇸 𝐔𝐧𝐢𝐭𝐞𝐝 𝐒𝐭𝐚𝐭𝐞𝐬",
-      "server": "5.10.244.0",
-      "server_port": 443,
+      "server": "www.kali.org",
+      "server_port": 2087,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
         "enabled": true,
-        "server_name": "blacklegends.umc-mansur13.workers.dev"
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=147.182.229.237:443?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇧🇷 𝐁𝐫𝐚𝐳𝐢𝐥",
-      "server": "5.10.244.0",
-      "server_port": 2095,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev"
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=38.180.78.255?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇲🇽 𝐌𝐞𝐱𝐢𝐜𝐨",
-      "server": "5.10.244.0",
-      "server_port": 2095,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev"
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=131.196.254.151?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇴 𝐑𝐨𝐦𝐚𝐧𝐢𝐚",
-      "server": "5.10.244.0",
-      "server_port": 2095,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "type": "trojan",
+      "tag": "🇮🇩 𝐈𝐧𝐝𝐨𝐧𝐞𝐬𝐢𝐚",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev"
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/gmaetunnel/proxyip=147.139.189.225:443?ed=2560",
+        "headers": {
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇷🇴 𝐑𝐨𝐦𝐚𝐢𝐚",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
+      "tls": {
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=45.13.38.120?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇪🇪 𝐄𝐬𝐭𝐨𝐧𝐢𝐚",
-      "server": "5.10.244.0",
-      "server_port": 2095,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev"
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=38.180.10.97?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇲🇰 𝐍𝐨𝐫𝐭𝐡 𝐌𝐚𝐜𝐞𝐝𝐨𝐧𝐢𝐚",
-      "server": "5.10.244.0",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "type": "trojan",
+      "tag": "🇦🇹 𝐀𝐮𝐬𝐭𝐫𝐢𝐚",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/gmaetunnel/proxyip=46.183.185.142?ed=2560",
-        "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 𝐂𝐳𝐞𝐜𝐡",
-      "server": "5.10.244.0",
-      "server_port": 2095,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        }
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/gmaetunnel/proxyip=37.205.15.169?ed=2560",
+        "path": "/gmaetunnel/proxyip=185.175.58.196?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇳🇴 𝐍𝐨𝐫𝐰𝐚𝐲",
-      "server": "45.131.4.74",
-      "server_port": 2082,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        }
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=194.5.98.17?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇼 𝐓𝐚𝐢𝐰𝐚𝐧",
-      "server": "5.10.244.0",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "type": "trojan",
+      "tag": "🇨🇿 𝐂𝐳𝐞𝐜𝐡",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/gmaetunnel/proxyip=37.205.15.169?ed=2560",
+        "headers": {
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇼 𝐓𝐚𝐢𝐰𝐚𝐧",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
+      "tls": {
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=188.253.6.249?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇰🇭 𝐂𝐚𝐦𝐛𝐨𝐝𝐢𝐚",
-      "server": "5.10.244.0",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        }
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=38.54.4.209?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇳🇿 𝐍𝐞𝐰 𝐙𝐞𝐚𝐥𝐚𝐧𝐝",
-      "server": "5.10.244.0",
-      "server_port": 2095,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "type": "trojan",
+      "tag": "🇳🇿 𝑵𝒆𝒘 𝒁𝒆𝒂𝒍𝒂𝒏𝒅",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        }
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=185.71.230.237?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇰🇷 𝐒𝐨𝐮𝐭𝐡 𝐊𝐨𝐫𝐞𝐚",
-      "server": "5.10.244.0",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        }
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/gmaetunnel/proxyip=141.164.42.2?ed=2560",
+        "path": "/gmaetunnel/proxyip=152.70.239.74?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇭🇺 𝐇𝐮𝐧𝐠𝐚𝐫𝐲",
-      "server": "45.131.4.93",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        }
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=38.180.109.174?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇳 𝐈𝐧𝐝𝐢𝐚",
-      "server": "5.10.244.0",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "type": "trojan",
+      "tag": "🇮🇳 𝐢𝐧𝐝𝐢𝐚",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        }
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=172.236.187.52?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇭🇰 𝐇𝐨𝐧𝐠 𝐊𝐨𝐧𝐠",
-      "server": "5.10.244.0",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        }
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=154.16.183.190?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇦🇷 𝐀𝐫𝐠𝐞𝐧𝐭𝐢𝐧𝐚",
-      "server": "5.10.244.0",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        }
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=38.54.45.184?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇧🇬 𝐁𝐮𝐥𝐠𝐚𝐫𝐢𝐚",
-      "server": "5.10.244.0",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        }
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=212.113.118.25?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇦🇺 𝐀𝐮𝐬𝐭𝐫𝐚𝐥𝐢𝐚",
-      "server": "5.10.244.0",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        }
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=170.64.232.210?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇧🇪 𝐁𝐞𝐥𝐠𝐢𝐮𝐦",
-      "server": "5.10.244.0",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        }
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=35.241.172.224?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇿🇦 𝐒𝐨𝐮𝐭𝐡 𝐀𝐟𝐫𝐢𝐜𝐚",
-      "server": "5.10.244.0",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        }
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/gmaetunnel/proxyip=84.8.142.203?ed=2560",
+        "path": "/gmaetunnel/proxyip=139.84.236.69:443?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇮🇸 𝐈𝐜𝐞𝐥𝐚𝐧𝐝",
-      "server": "5.10.244.0",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        }
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=195.246.230.125?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇲🇩 𝐌𝐨𝐥𝐝𝐨𝐯𝐚",
-      "server": "45.131.4.44",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "type": "trojan",
+      "tag": "🇮🇪 𝐈𝐫𝐞𝐥𝐚𝐧𝐝",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        }
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/gmaetunnel/proxyip=185.163.45.40?ed=2560",
+        "path": "/gmaetunnel/proxyip=198.55.103.168?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇭 𝐓𝐡𝐚𝐢𝐥𝐚𝐧𝐝",
-      "server": "5.10.244.0",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "type": "trojan",
+      "tag": "🇻🇳 𝐕𝐢𝐞𝐭𝐧𝐚𝐦",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/gmaetunnel/proxyip=163.61.74.121?ed=2560",
+        "headers": {
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇭 𝐓𝐡𝐚𝐢𝐥𝐚𝐧𝐝",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
+      "tls": {
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=157.254.192.20?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇩🇰 𝐃𝐞𝐧𝐦𝐚𝐫𝐤",
-      "server": "5.10.244.0",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        }
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/gmaetunnel/proxyip=92.113.146.87?ed=2560",
+        "path": "/gmaetunnel/proxyip=193.180.211.155?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇲 𝐀𝐫𝐦𝐞𝐧𝐢𝐚",
-      "server": "5.10.244.0",
-      "server_port": 2082,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "type": "trojan",
+      "tag": "🇦🇲 𝐀𝐫𝐦𝐞𝐢𝐚",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        }
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/gmaetunnel/proxyip=2.56.204.183?ed=2560",
+        "path": "/gmaetunnel/proxyip=2.56.204.246?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇲🇾 𝐌𝐚𝐥𝐚𝐲𝐬𝐢𝐚",
-      "server": "5.10.244.0",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        }
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=47.250.212.59?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇵🇱 𝐏𝐨𝐥𝐚𝐧𝐝",
-      "server": "5.10.244.0",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        }
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=191.101.184.50?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇧🇾 𝐁𝐞𝐥𝐚𝐫𝐮𝐬",
-      "server": "45.131.4.44",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/gmaetunnel/proxyip=212.60.4.134?ed=2560",
-        "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇱🇹 𝐋𝐢𝐭𝐡𝐮𝐚𝐧𝐢𝐚",
-      "server": "5.10.244.0",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        }
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=89.40.1.179?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇪🇨 𝐄𝐜𝐮𝐚𝐝𝐨𝐫",
-      "server": "5.10.244.0",
-      "server_port": 8080,
-      "uuid": "964e6322-afad-4594-8508-86d634d732e6",
+      "type": "trojan",
+      "tag": "🇧🇾 𝐁𝐞𝐥𝐚𝐫𝐮𝐬",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
-        "enabled": false,
-        "server_name": "blacklegends.umc-mansur13.workers.dev",
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/gmaetunnel/proxyip=212.60.4.134:443?ed=2560",
+        "headers": {
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇪🇨 𝐄𝐜𝐮𝐚𝐝𝐨𝐫𝐦",
+      "server": "www.kali.org",
+      "server_port": 2087,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
+      "tls": {
+        "enabled": true,
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=130.94.116.44?ed=2560",
         "headers": {
-          "Host": "blacklegends.umc-mansur13.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     }
@@ -1392,7 +1726,7 @@
         "domain_keyword": [
           "filimo"
         ],
-        "outbound": "🛰️ Service"
+        "outbound": "🍁🕹️📟 𝐀𝐲𝐡𝐚𝐧𝐗-𝐅𝐫𝐞𝐞𝐝𝐨𝐦.👾🛡 ⚔️ 🔄"
       },
       {
         "rule_set": [
@@ -1448,7 +1782,7 @@
         "update_interval": "30d"
       }
     ],
-    "final": "🛰️ Service",
+    "final": "🍁🕹️📟 𝐀𝐲𝐡𝐚𝐧𝐗-𝐅𝐫𝐞𝐞𝐝𝐨𝐦.👾🛡 ⚔️ 🔄",
     "auto_detect_interface": true,
     "default_domain_resolver": "dns_direct"
   },
