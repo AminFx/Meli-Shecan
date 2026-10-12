@@ -1,6 +1,6 @@
 # Ayhan MeliShecan | 😎🍂🧑‍💻🚀🌿
 
-> **عبور از اینترنت ملی با یک کلیک!**  
+> **عبور از اینترنت فیلتر شده با یک کلیک!**  
 > راه‌حلی سریع و امن برای دسترسی به اینترنت جهانی در شرایط محدودیت و فیلترینگ گسترده.
 
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen)](https://github.com/AyhanMansur/ayhan-meli-shecan)
