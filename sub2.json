@@ -8,7 +8,7 @@
     "servers": [
       {
         "tag": "dns_proxy",
-        "address": "9.9.9.9",
+        "address": "185.55.226.26",
         "address_resolver": "dns_local",
         "strategy": "ipv4_only",
         "detour": "Proxy"
