@@ -114,7 +114,7 @@
       "mtu": 1430,
       "auto_route": true,
       "strict_route": true,
-      "stack": "gvisor",
+      "stack": "system",
       "address": [
         "172.16.0.1/30",
         "fd00::1/126"
@@ -202,7 +202,7 @@
       "outbounds": [
         "🇹🇷 𝐓𝐮𝐫𝐤𝐞𝐲",
         "🇦🇪 𝐃𝐮𝐛𝐚𝐢",
-				"🇦🇲 𝐀𝐫𝐦𝐞𝐢𝐚",
+        "🇦🇲 𝐀𝐫𝐦𝐞𝐢𝐚",
         "🇵🇱 𝐏𝐨𝐥𝐚𝐧𝐝"
       ],
       "interrupt_exist_connections": true
