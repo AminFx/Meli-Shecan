@@ -1,4 +1,3 @@
-{
   "log": {
     "disabled": false,
     "level": "info",
@@ -223,13 +222,13 @@
       "tag": "🍁🕹️📟 𝐀𝐲𝐡𝐚𝐧𝐗-𝐅𝐫𝐞𝐞𝐝𝐨𝐦.👾🛡 ⚔🔄",
       "server": "45.131.4.44",
       "server_port": 2087,
-      "password": "9BK_OfDsXhbPKs7zX",
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "tls": {
         "enabled": true,
-        "server_name": "tsit7pyhmabrlriqecwb4miphh125sn.ayhan919292.workers.dev",
+        "server_name": "small-block-f048.umc-mansur13.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "ios"
         },
         "alpn": [
           "http/1.1"
@@ -237,9 +236,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/tr/ScfQ8Q2ZJR89fiiL7xVg9aDFxY?ed=2560",
+        "path": "/gmaetunnel/proxyip=147.182.229.237:443?ed=2560",
         "headers": {
-          "Host": "tsit7pyhmabrlriqecwb4miphh125sn.ayhan919292.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
