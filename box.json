@@ -261,27 +261,6 @@
       "interrupt_exist_connections": true
     },
     {
-      "type": "selector",
-      "tag": "📞 Calls (WARP)",
-      "default": "WARP",
-      "outbounds": [
-        "WARP",
-        "direct",
-        "🍁🕹️📟 𝐀𝐲𝐡𝐚𝐧𝐗-𝐅𝐫𝐞𝐞𝐝𝐨𝐦.👾🛡 ⚔️ 🔄"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "🎬 Filimo (Irancell)",
-      "default": "direct",
-      "outbounds": [
-        "direct",
-        "🍁🕹️📟 𝐀𝐲𝐡𝐚𝐧𝐗-𝐅𝐫𝐞𝐞𝐝𝐨𝐦.👾🛡 ⚔️ 🔄"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
       "type": "urltest",
       "tag": "🔄 𝐔𝐩𝐝𝐚𝐭𝐞 𝐃𝐚𝐢𝐥𝐲",
       "outbounds": [
@@ -343,7 +322,7 @@
     },
     {
       "type": "direct",
-      "tag": "direct"
+      "tag": "direc"
     },
     {
       "type": "trojan",
