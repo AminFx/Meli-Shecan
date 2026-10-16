@@ -63,6 +63,12 @@
         "server": "dns_game"
       },
       {
+        "domain_keyword": [
+          "filimo"
+        ],
+        "server": "dns_direct"
+      },
+      {
         "rule_set": "geosite-ir",
         "server": "dns_proxy"
       },
@@ -105,6 +111,35 @@
         "insecure": true
       },
       "detour": "🍁🕹️📟 𝐀𝐲𝐡𝐚𝐧𝐗-𝐅𝐫𝐞𝐞𝐝𝐨𝐦.👾🛡 ⚔️ 🔄"
+    }
+  ],
+  "endpoints": [
+    {
+      "type": "wireguard",
+      "tag": "WARP",
+      "system": false,
+      "mtu": 1280,
+      "address": [
+        "172.16.0.2/32",
+        "2606:4700:110:8f81:d551:a0:532e:a2b3/128"
+      ],
+      "private_key": "wF4MIEolgwPyXrxK8Wr04lm2r2nsawfv+cwtP0I9SHY=",
+      "peers": [
+        {
+          "address": "8.6.112.224",
+          "port": 8886,
+          "public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+          "allowed_ips": [
+            "0.0.0.0/0",
+            "::/0"
+          ],
+          "reserved": [
+            74,
+            71,
+            6
+          ]
+        }
+      ]
     }
   ],
   "inbounds": [
@@ -169,7 +204,6 @@
         "🇧🇪 𝐁𝐞𝐥𝐠𝐢𝐮𝐦",
         "🇿🇦 𝐒𝐨𝐮𝐭𝐡 𝐀𝐟𝐫𝐢𝐜𝐚",
         "🇮🇸 𝐈𝐜𝐞𝐥𝐚𝐧𝐝",
-        "🇮🇪 𝐈𝐫𝐞𝐥𝐚𝐧𝐝",
         "🇻🇳 𝐕𝐢𝐞𝐭𝐧𝐚𝐦",
         "🇹🇭 𝐓𝐡𝐚𝐢𝐥𝐚𝐧𝐝",
         "🇩🇰 𝐃𝐞𝐧𝐦𝐚𝐫𝐤",
@@ -209,7 +243,6 @@
         "🇩🇰 𝐃𝐞𝐧𝐦𝐚𝐫𝐤",
         "🇬🇧 𝐔𝐧𝐢𝐭𝐞𝐝 𝐊𝐢𝐧𝐠𝐝𝐨𝐦",
         "🇳🇱 𝐍𝐞𝐭𝐡𝐞𝐫𝐥𝐚𝐧𝐝𝐬"
-        
       ],
       "interrupt_exist_connections": true
     },
@@ -223,7 +256,28 @@
         "🇦🇲 𝐀𝐫𝐦𝐞𝐢𝐚",
         "🇵🇱 𝐏𝐨𝐥𝐚𝐧𝐝",
         "🇭🇺 𝐇𝐮𝐧𝐠𝐚𝐫𝐲",
-        "🇧🇬 𝐁𝐮𝐥𝐠𝐚𝐫𝐢𝐚",
+        "🇧🇬 𝐁𝐮𝐥𝐠𝐚𝐫𝐢𝐚"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "📞 Calls (WARP)",
+      "default": "WARP",
+      "outbounds": [
+        "WARP",
+        "direct",
+        "🍁🕹️📟 𝐀𝐲𝐡𝐚𝐧𝐗-𝐅𝐫𝐞𝐞𝐝𝐨𝐦.👾🛡 ⚔️ 🔄"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "🎬 Filimo (Irancell)",
+      "default": "direct",
+      "outbounds": [
+        "direct",
+        "🍁🕹️📟 𝐀𝐲𝐡𝐚𝐧𝐗-𝐅𝐫𝐞𝐞𝐝𝐨𝐦.👾🛡 ⚔️ 🔄"
       ],
       "interrupt_exist_connections": true
     },
@@ -272,7 +326,6 @@
         "🇧🇪 𝐁𝐞𝐥𝐠𝐢𝐮𝐦",
         "🇿🇦 𝐒𝐨𝐮𝐭𝐡 𝐀𝐟𝐫𝐢𝐜𝐚",
         "🇮🇸 𝐈𝐜𝐞𝐥𝐚𝐧𝐝",
-        "🇮🇪 𝐈𝐫𝐞𝐥𝐚𝐧𝐝",
         "🇻🇳 𝐕𝐢𝐞𝐭𝐧𝐚𝐦",
         "🇹🇭 𝐓𝐡𝐚𝐢𝐥𝐚𝐧𝐝",
         "🇩🇰 𝐃𝐞𝐧𝐦𝐚𝐫𝐤",
@@ -295,45 +348,23 @@
     {
       "type": "trojan",
       "tag": "🍁🕹️📟 𝐀𝐲𝐡𝐚𝐧𝐗-𝐅𝐫𝐞𝐞𝐝𝐨𝐦.👾🛡 ⚔🔄",
-      "server": "172.64.81.0",
-      "server_port": 2087,
-      "password": "9BK_OfDsXhbPKs7zX",
-      "tls": {
-        "enabled": true,
-        "server_name": "tsit7pyhmabrlriqecwb4miphh125sn.ayhan919292.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
+      "server": "45.131.4.44",
+      "server_port": 2082,
+      "password": "964e6322-afad-4594-8508-86d634d732e6",
       "transport": {
         "type": "ws",
-        "path": "/tr/ScfQ8Q2ZJR89fiiL7xVg9aDFxY?ed=2560",
+        "path": "/gmaetunnel/proxyip=147.182.229.237:443?ed=2560",
         "headers": {
-          "Host": "tsit7pyhmabrlriqecwb4miphh125sn.ayhan919292.workers.dev"
+          "Host": "small-block-f048.umc-mansur13.workers.dev"
         }
       }
     },
     {
       "type": "trojan",
       "tag": "🕹️ 📟🫆𝐀𝐲𝐡𝐚𝐧𝐗-𝐅𝐫𝐞𝐞𝐝𝐨𝐦.🌌🍀 🔄",
-      "server": "172.64.81.0",
-      "server_port": 2083,
+      "server": "45.131.4.44",
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=37.205.15.169?ed=2560",
@@ -345,20 +376,9 @@
     {
       "type": "trojan",
       "tag": "𝐉𝐨𝐢𝐧 .🍁🪾 <..@𝐚𝐲𝐡𝐚𝐧𝐝𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫..>🔄",
-      "server": "172.64.81.0",
-      "server_port": 2096,
+      "server": "45.131.4.44",
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=95.188.72.67?ed=2560",
@@ -371,19 +391,8 @@
       "type": "trojan",
       "tag": "🇦🇪 𝐃𝐮𝐛𝐚𝐢",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/out.php/m/gmaetunnel/proxyip=176.97.66.175?ed=2560",
@@ -396,19 +405,8 @@
       "type": "trojan",
       "tag": "🇺🇿 𝐔𝐳𝐛𝐞𝐤𝐢𝐬𝐭𝐚𝐧",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=157.22.128.7?ed=2560",
@@ -421,19 +419,8 @@
       "type": "trojan",
       "tag": "🇮🇱 𝐈𝐬𝐫𝐚𝐞𝐥",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=45.150.108.59?ed=2560",
@@ -445,20 +432,9 @@
     {
       "type": "trojan",
       "tag": "🇹🇷 𝐓𝐮𝐫𝐤𝐞𝐲",
-      "server": "www.kali.org",
-      "server_port": 2087,
+      "server": "45.131.4.44",
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=185.255.93.189?ed=2560",
@@ -471,19 +447,8 @@
       "type": "trojan",
       "tag": "🇰🇿 𝐊𝐚𝐳𝐚𝐤𝐡𝐬𝐭𝐚𝐧",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=109.248.170.245?ed=2560",
@@ -496,19 +461,8 @@
       "type": "trojan",
       "tag": "🇷🇺 𝐑𝐮𝐬𝐬𝐢𝐚",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=95.188.72.67?ed=2560",
@@ -521,19 +475,8 @@
       "type": "trojan",
       "tag": "🇮🇹 𝐈𝐭𝐚𝐥𝐲",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=83.229.6.134:443?ed=2560",
@@ -546,19 +489,8 @@
       "type": "trojan",
       "tag": "🇨🇭 𝐒𝐰𝐢𝐭𝐳𝐞𝐫𝐥𝐚𝐧𝐝",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=79.132.141.152?ed=2560",
@@ -571,19 +503,8 @@
       "type": "trojan",
       "tag": "🇱🇻 𝐋𝐚𝐭𝐯𝐢𝐚",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=212.6.44.68:443?ed=2560",
@@ -596,19 +517,8 @@
       "type": "trojan",
       "tag": "🇫🇮 𝐅𝐢𝐧𝐥𝐚𝐧𝐝",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=138.124.7.136?ed=2560",
@@ -621,19 +531,8 @@
       "type": "trojan",
       "tag": "🇩🇪 𝐆𝐞𝐫𝐦𝐚𝐧𝐲",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=209.38.246.159?ed=2560",
@@ -646,19 +545,8 @@
       "type": "trojan",
       "tag": "🇸🇪 𝐒𝐰𝐞𝐝𝐞𝐧",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=95.141.241.216?ed=2560",
@@ -671,19 +559,8 @@
       "type": "trojan",
       "tag": "🇫🇷 𝐅𝐫𝐚𝐧𝐜𝐞",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=134.209.19.200?ed=2560",
@@ -696,19 +573,8 @@
       "type": "trojan",
       "tag": "🇳🇱 𝐍𝐞𝐭𝐡𝐞𝐫𝐥𝐚𝐧𝐝𝐬",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=209.38.99.215?ed=2560",
@@ -721,19 +587,8 @@
       "type": "trojan",
       "tag": "🇬🇧 𝐔𝐧𝐢𝐭𝐞𝐝 𝐊𝐢𝐧𝐠𝐝𝐨𝐦",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=67.207.80.155?ed=2560",
@@ -746,19 +601,8 @@
       "type": "trojan",
       "tag": "🇸🇬 𝐒𝐢𝐧𝐠𝐚𝐩𝐨𝐫𝐞",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=188.166.251.234?ed=2560",
@@ -771,19 +615,8 @@
       "type": "trojan",
       "tag": "🇪🇸 𝐒𝐩𝐚𝐢𝐧",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=194.154.28.227?ed=2560",
@@ -796,19 +629,8 @@
       "type": "trojan",
       "tag": "🇨🇦 𝐂𝐚𝐧𝐚𝐝𝐚",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=192.99.169.176?ed=2560",
@@ -821,19 +643,8 @@
       "type": "trojan",
       "tag": "🇯🇵 𝐉𝐚𝐩𝐚𝐧",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=43.170.8.95?ed=2560",
@@ -846,19 +657,8 @@
       "type": "trojan",
       "tag": "🇺🇸 𝐔𝐧𝐢𝐭𝐞𝐝 𝐒𝐭𝐚𝐭𝐞𝐬",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=147.182.229.237:443?ed=2560",
@@ -871,19 +671,8 @@
       "type": "trojan",
       "tag": "🇧🇷 𝐁𝐫𝐚𝐳𝐢𝐥",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=38.180.78.255?ed=2560",
@@ -896,19 +685,8 @@
       "type": "trojan",
       "tag": "🇲🇽 𝐌𝐞𝐱𝐢𝐜𝐨",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=131.196.254.151?ed=2560",
@@ -921,19 +699,8 @@
       "type": "trojan",
       "tag": "🇮🇩 𝐈𝐧𝐝𝐨𝐧𝐞𝐬𝐢𝐚",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=147.139.189.225:443?ed=2560",
@@ -946,19 +713,8 @@
       "type": "trojan",
       "tag": "🇷🇴 𝐑𝐨𝐦𝐚𝐢𝐚",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=45.13.38.120?ed=2560",
@@ -971,19 +727,8 @@
       "type": "trojan",
       "tag": "🇪🇪 𝐄𝐬𝐭𝐨𝐧𝐢𝐚",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=38.180.10.97?ed=2560",
@@ -996,19 +741,8 @@
       "type": "trojan",
       "tag": "🇦🇹 𝐀𝐮𝐬𝐭𝐫𝐢𝐚",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=185.175.58.196?ed=2560",
@@ -1021,19 +755,8 @@
       "type": "trojan",
       "tag": "🇳🇴 𝐍𝐨𝐫𝐰𝐚𝐲",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=194.5.98.17?ed=2560",
@@ -1046,19 +769,8 @@
       "type": "trojan",
       "tag": "🇨🇿 𝐂𝐳𝐞𝐜𝐡",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=37.205.15.169?ed=2560",
@@ -1071,19 +783,8 @@
       "type": "trojan",
       "tag": "🇹🇼 𝐓𝐚𝐢𝐰𝐚𝐧",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=188.253.6.249?ed=2560",
@@ -1096,19 +797,8 @@
       "type": "trojan",
       "tag": "🇰🇭 𝐂𝐚𝐦𝐛𝐨𝐝𝐢𝐚",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=38.54.4.209?ed=2560",
@@ -1121,19 +811,8 @@
       "type": "trojan",
       "tag": "🇳🇿 𝑵𝒆𝒘 𝒁𝒆𝒂𝒍𝒂𝒏𝒅",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=185.71.230.237?ed=2560",
@@ -1146,19 +825,8 @@
       "type": "trojan",
       "tag": "🇰🇷 𝐒𝐨𝐮𝐭𝐡 𝐊𝐨𝐫𝐞𝐚",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=152.70.239.74?ed=2560",
@@ -1171,19 +839,8 @@
       "type": "trojan",
       "tag": "🇭🇺 𝐇𝐮𝐧𝐠𝐚𝐫𝐲",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=38.180.109.174?ed=2560",
@@ -1196,19 +853,8 @@
       "type": "trojan",
       "tag": "🇮🇳 𝐢𝐧𝐝𝐢𝐚",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=172.236.187.52?ed=2560",
@@ -1221,19 +867,8 @@
       "type": "trojan",
       "tag": "🇭🇰 𝐇𝐨𝐧𝐠 𝐊𝐨𝐧𝐠",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=154.16.183.190?ed=2560",
@@ -1246,19 +881,8 @@
       "type": "trojan",
       "tag": "🇦🇷 𝐀𝐫𝐠𝐞𝐧𝐭𝐢𝐧𝐚",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=38.54.45.184?ed=2560",
@@ -1271,19 +895,8 @@
       "type": "trojan",
       "tag": "🇧🇬 𝐁𝐮𝐥𝐠𝐚𝐫𝐢𝐚",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=212.113.118.25?ed=2560",
@@ -1296,19 +909,8 @@
       "type": "trojan",
       "tag": "🇦🇺 𝐀𝐮𝐬𝐭𝐫𝐚𝐥𝐢𝐚",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=170.64.232.210?ed=2560",
@@ -1321,19 +923,8 @@
       "type": "trojan",
       "tag": "🇧🇪 𝐁𝐞𝐥𝐠𝐢𝐮𝐦",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=35.241.172.224?ed=2560",
@@ -1346,19 +937,8 @@
       "type": "trojan",
       "tag": "🇿🇦 𝐒𝐨𝐮𝐭𝐡 𝐀𝐟𝐫𝐢𝐜𝐚",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=139.84.236.69:443?ed=2560",
@@ -1371,19 +951,8 @@
       "type": "trojan",
       "tag": "🇮🇸 𝐈𝐜𝐞𝐥𝐚𝐧𝐝",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=195.246.230.125?ed=2560",
@@ -1394,46 +963,10 @@
     },
     {
       "type": "trojan",
-      "tag": "🇮🇪 𝐈𝐫𝐞𝐥𝐚𝐧𝐝",
-      "server": "www.kali.org",
-      "server_port": 2087,
-      "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/gmaetunnel/proxyip=198.55.103.168?ed=2560",
-        "headers": {
-          "Host": "small-block-f048.umc-mansur13.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "trojan",
       "tag": "🇻🇳 𝐕𝐢𝐞𝐭𝐧𝐚𝐦",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=163.61.74.121?ed=2560",
@@ -1446,19 +979,8 @@
       "type": "trojan",
       "tag": "🇹🇭 𝐓𝐡𝐚𝐢𝐥𝐚𝐧𝐝",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=157.254.192.20?ed=2560",
@@ -1471,19 +993,8 @@
       "type": "trojan",
       "tag": "🇩🇰 𝐃𝐞𝐧𝐦𝐚𝐫𝐤",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=193.180.211.155?ed=2560",
@@ -1496,19 +1007,8 @@
       "type": "trojan",
       "tag": "🇦🇲 𝐀𝐫𝐦𝐞𝐢𝐚",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=2.56.204.246?ed=2560",
@@ -1521,19 +1021,8 @@
       "type": "trojan",
       "tag": "🇲🇾 𝐌𝐚𝐥𝐚𝐲𝐬𝐢𝐚",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=47.250.212.59?ed=2560",
@@ -1546,19 +1035,8 @@
       "type": "trojan",
       "tag": "🇵🇱 𝐏𝐨𝐥𝐚𝐧𝐝",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=191.101.184.50?ed=2560",
@@ -1571,19 +1049,8 @@
       "type": "trojan",
       "tag": "🇱🇹 𝐋𝐢𝐭𝐡𝐮𝐚𝐧𝐢𝐚",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=89.40.1.179?ed=2560",
@@ -1596,19 +1063,8 @@
       "type": "trojan",
       "tag": "🇧🇾 𝐁𝐞𝐥𝐚𝐫𝐮𝐬",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=212.60.4.134:443?ed=2560",
@@ -1621,19 +1077,8 @@
       "type": "trojan",
       "tag": "🇪🇨 𝐄𝐜𝐮𝐚𝐝𝐨𝐫𝐦",
       "server": "www.kali.org",
-      "server_port": 2087,
+      "server_port": 2082,
       "password": "964e6322-afad-4594-8508-86d634d732e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-block-f048.umc-mansur13.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
       "transport": {
         "type": "ws",
         "path": "/gmaetunnel/proxyip=130.94.116.44?ed=2560",
@@ -1653,6 +1098,20 @@
       {
         "protocol": "dns",
         "action": "hijack-dns"
+      },
+      {
+        "network": [
+          "udp"
+        ],
+        "rule_set": [
+          "geosite-whatsapp",
+          "geosite-telegram",
+          "geosite-instagram",
+          "geosite-facebook",
+          "geoip-telegram",
+          "geoip-facebook"
+        ],
+        "outbound": "📞 Calls (WARP)"
       },
       {
         "network": [
@@ -1676,7 +1135,7 @@
           "10000:10019",
           "20000:20002"
         ],
-        "outbound": "👾 Game Booster"
+        "outbound": "👾 𝐆𝐚𝐦𝐞 𝐁𝐨𝐨𝐬𝐭𝐞𝐫"
       },
       {
         "network": [
@@ -1722,7 +1181,7 @@
         "network": [
           "tcp"
         ],
-        "outbound": "👾 Game Booster"
+        "outbound": "👾 𝐆𝐚𝐦𝐞 𝐁𝐨𝐨𝐬𝐭𝐞𝐫"
       },
       {
         "domain_keyword": [
@@ -1744,7 +1203,7 @@
         "domain_keyword": [
           "filimo"
         ],
-        "outbound": "🍁🕹️📟 𝐀𝐲𝐡𝐚𝐧𝐗-𝐅𝐫𝐞𝐞𝐝𝐨𝐦.👾🛡 ⚔️ 🔄"
+        "outbound": "🎬 Filimo (Irancell)"
       },
       {
         "rule_set": [
@@ -1763,7 +1222,7 @@
         "rule_set": [
           "geosite-youtube"
         ],
-        "outbound": "📺 YouTube"
+        "outbound": "📺 𝐘𝐨𝐮𝐓𝐮𝐛𝐞"
       },
       {
         "ip_is_private": true,
@@ -1797,6 +1256,48 @@
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-youtube.srs",
+        "update_interval": "30d"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-whatsapp",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-whatsapp.srs",
+        "update_interval": "30d"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-telegram",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-telegram.srs",
+        "update_interval": "30d"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-instagram",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-instagram.srs",
+        "update_interval": "30d"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-facebook",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-facebook.srs",
+        "update_interval": "30d"
+      },
+      {
+        "type": "remote",
+        "tag": "geoip-telegram",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs",
+        "update_interval": "30d"
+      },
+      {
+        "type": "remote",
+        "tag": "geoip-facebook",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/facebook.srs",
         "update_interval": "30d"
       }
     ],
