@@ -16,8 +16,8 @@
       },
       {
         "tag": "dns_game",
-        "type": "tcp",
-        "server": "78.157.42.100"
+        "type": "udp",
+        "server": "4.2.2.2"
       },
       {
         "tag": "dns_game_alt",
